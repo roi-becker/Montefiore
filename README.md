@@ -25,17 +25,17 @@ Once every couple of months, we gather the usage statistics for each appartement
 Our website keeps tracks of all the users, their passwords, and usage history (SQL).
 Inside the building's main power outlet, we have power lines running to a washing and drying machine on each floor.
 
-![alt outlet](https://github.com/roi-becker/Montefiore/blob/master/README%20assets/outlet.png)
+![alt outlet](https://github.com/roi-becker/Montefiore/blob/master/README%20assets/outlet.jpeg)
 
 A raspberry pi (2...) connected to a relay board is controlling all of those power lines.
 
-![alt pi](https://github.com/roi-becker/Montefiore/blob/master/README%20assets/pit.png)
+![alt pi](https://github.com/roi-becker/Montefiore/blob/master/README%20assets/pit.jpeg)
 
 Once every few seconds, it will query the website (through a REST API) for the machines that should get power.
 Since all communication goes from the client to the server, we don't need to deal with static IP / DNS.
 For convinience, we have the computer connected to a screen showing what machines are on.
 
-![alt dashboard](https://github.com/roi-becker/Montefiore/blob/master/README%20assets/dashboard.png)
+![alt dashboard](https://github.com/roi-becker/Montefiore/blob/master/README%20assets/dashboard.jpeg)
 
 ## How To Deploy
 
