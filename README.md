@@ -20,12 +20,12 @@ Confirm your selection
 The machine you selected will now be powered on for the duration you specified (plus a few extra minutes on the house).
 
 ## How It Works
-Our website keeps tracks of all the users, their passwords, and usage history (SQL).
+Our website (MontefioreServer) keeps tracks of all the users, their passwords, and usage history (SQL).
 Inside the building's main power outlet, we have power lines running to a washing and drying machine on each floor.
 
 ![alt outlet](https://github.com/roi-becker/Montefiore/blob/master/README%20assets/outlet.jpg)
 
-A raspberry pi (2...) connected to a relay board is controlling all of those power lines.
+A raspberry pi (MontefioreClient) with GPIO connections to a relay board is controlling all of those power lines.
 
 ![alt pi](https://github.com/roi-becker/Montefiore/blob/master/README%20assets/pi.jpg)
 
