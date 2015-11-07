@@ -39,6 +39,11 @@ For convinience, we have the computer connected to a screen showing what machine
 Once every couple of months, we gather the usage statistics for each appartement and bill them accordingly (to pay for this whole operation).
 
 ## How To Deploy
+* In your favorite SQL server, run the commands in MontefioreServer/MontefioreServer/Database/CreateTables.sql. This will create the required tables.
+* Fill the users table with passwords for all the users.
+* Update the dbml files under MontefioreServer/MontefioreServer/Database to point to your server.
+* Deploy the server project to an Azure web site.
+* Update the client Main file to point to your deployed server.
 
 ### Important Note
 Due to my lack of will to deal with certificates (and my hope that now one will try to hack us), the entire system is not secured.
