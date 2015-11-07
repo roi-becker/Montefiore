@@ -31,6 +31,7 @@ A raspberry pi (2...) connected to a relay board is controlling all of those pow
 
 Once every few seconds, it will query the website (through a REST API) for the machines that should get power.
 Since all communication goes from the client to the server, we don't need to deal with static IP / DNS.
+
 For convinience, we have the computer connected to a screen showing what machines are on.
 
 ![alt dashboard](https://github.com/roi-becker/Montefiore/blob/master/README%20assets/dashboard.jpeg)
