@@ -19,8 +19,6 @@ Confirm your selection
 
 The machine you selected will now be powered on for the duration you specified (plus a few extra minutes on the house).
 
-Once every couple of months, we gather the usage statistics for each appartement and bill them accordingly (to pay for this whole operation).
-
 ## How It Works
 Our website keeps tracks of all the users, their passwords, and usage history (SQL).
 Inside the building's main power outlet, we have power lines running to a washing and drying machine on each floor.
@@ -29,13 +27,15 @@ Inside the building's main power outlet, we have power lines running to a washin
 
 A raspberry pi (2...) connected to a relay board is controlling all of those power lines.
 
-![alt pi](https://github.com/roi-becker/Montefiore/blob/master/README%20assets/pit.jpg)
+![alt pi](https://github.com/roi-becker/Montefiore/blob/master/README%20assets/pi.jpg)
 
 Once every few seconds, it will query the website (through a REST API) for the machines that should get power.
 Since all communication goes from the client to the server, we don't need to deal with static IP / DNS.
 For convinience, we have the computer connected to a screen showing what machines are on.
 
 ![alt dashboard](https://github.com/roi-becker/Montefiore/blob/master/README%20assets/dashboard.jpeg)
+
+Once every couple of months, we gather the usage statistics for each appartement and bill them accordingly (to pay for this whole operation).
 
 ## How To Deploy
 
