@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="roib_m13" Class="roib_m13DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=fsux1r8z1r.database.windows.net;Initial Catalog=roib_m13;Persist Security Info=True;User ID=roib" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="roib_m13ConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.usage" Member="usages">
+    <Type Name="usage">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="StartTime" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DurationMinutes" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Type" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Floor" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.users" Member="users">
+    <Type Name="user">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Password" Type="System.String" DbType="NVarChar(64) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>

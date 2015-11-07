@@ -1,0 +1,151 @@
+﻿@model M13.Models.AdministrationModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <title>Montefiore 13</title>
+    <link rel="stylesheet" href="~/Content/themes/Bootstrap/bootstrap.css" />
+    <link rel="stylesheet" href="~/Content/themes/theme.css" />
+</head>
+<body>
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">Montefiore 13</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="/Administration">Admin</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" style="height: 65px;"></div>
+
+    <div id="root" class="container">
+
+        <!-- Password -->
+        <div class="panel panel-default" id="passwordDiv">
+            <div class="input-group">
+                <span class="input-group-addon">Password</span>
+                <input type="password" class="form-control" placeholder="Make sure you use english" id="password"/>
+                <div>
+                    <img src="/Content/themes/301.gif" id="loginGif" style="display: none; position: absolute; top:10%; left:101%;"/>
+                </div>
+                <span class="input-group-btn">
+                    <button class="btn btn-info" type="button" id="login"><span class="glyphicon glyphicon-share-alt"></span> Login</button>
+                </span>
+            </div>
+        </div>
+
+        <!-- History -->
+        <div class="panel panel-default" id="history" style="display: none">
+            <div class="panel-heading">History</div>
+
+            <div class="panel-body">
+                <img src="/Content/themes/301.gif" id="historyGif1" style="position: relative; top:10%; left:45%;"/>
+                <p class="text-center"><strong>@(Model.c1.ToString("MMM-yyyy"))</strong></p>
+            </div>
+            <table class="table table-condensed" id="hTable1">
+            </table>
+
+            <div class="panel-body">
+                <img src="/Content/themes/301.gif" id="historyGif2" style="position: relative; top:10%; left:45%;"/>
+                <p class="text-center"><strong>@(Model.c2.ToString("MMM-yyyy"))</strong></p>
+            </div>
+            <table class="table table-condensed" id="hTable2">
+            </table>
+
+            <div class="panel-body">
+                <img src="/Content/themes/301.gif" id="historyGif3" style="position: relative; top:10%; left:45%;"/>
+                <p class="text-center"><strong>@(Model.c3.ToString("MMM-yyyy"))</strong></p>
+            </div>
+            <table class="table table-condensed" id="hTable3">
+            </table>
+
+            <div class="panel-body">
+                <img src="/Content/themes/301.gif" id="historyGif4" style="position: relative; top:10%; left:45%;"/>
+                <p class="text-center"><strong>@(Model.c4.ToString("MMM-yyyy"))</strong></p>
+            </div>
+            <table class="table table-condensed" id="hTable4">
+            </table>
+
+            <div class="panel-body">
+                <img src="/Content/themes/301.gif" id="historyGif5" style="position: relative; top:10%; left:45%;"/>
+                <p class="text-center"><strong>@(Model.c5.ToString("MMM-yyyy"))</strong></p>
+            </div>
+            <table class="table table-condensed" id="hTable5">
+            </table>
+
+            <div class="panel-body">
+                <img src="/Content/themes/301.gif" id="historyGif6" style="position: relative; top:10%; left:45%;"/>
+                <p class="text-center"><strong>@(Model.c6.ToString("MMM-yyyy"))</strong></p>
+            </div>
+            <table class="table table-condensed" id="hTable6">
+            </table>
+
+            <div class="panel-body">
+                <img src="/Content/themes/301.gif" id="historyGif7" style="position: relative; top:10%; left:45%;"/>
+                <p class="text-center"><strong>@(Model.c7.ToString("MMM-yyyy"))</strong></p>
+            </div>
+            <table class="table table-condensed" id="hTable7">
+            </table>
+
+            <div class="panel-body">
+                <img src="/Content/themes/301.gif" id="historyGif8" style="position: relative; top:10%; left:45%;"/>
+                <p class="text-center"><strong>@(Model.c8.ToString("MMM-yyyy"))</strong></p>
+            </div>
+            <table class="table table-condensed" id="hTable8">
+            </table>
+
+            <div class="panel-body">
+                <img src="/Content/themes/301.gif" id="historyGif9" style="position: relative; top:10%; left:45%;"/>
+                <p class="text-center"><strong>@(Model.c9.ToString("MMM-yyyy"))</strong></p>
+            </div>
+            <table class="table table-condensed" id="hTable9">
+            </table>
+
+            <div class="panel-body">
+                <img src="/Content/themes/301.gif" id="historyGif10" style="position: relative; top:10%; left:45%;"/>
+                <p class="text-center"><strong>@(Model.c10.ToString("MMM-yyyy"))</strong></p>
+            </div>
+            <table class="table table-condensed" id="hTable10">
+            </table>
+
+            <div class="panel-body">
+                <img src="/Content/themes/301.gif" id="historyGif11" style="position: relative; top:10%; left:45%;"/>
+                <p class="text-center"><strong>@(Model.c11.ToString("MMM-yyyy"))</strong></p>
+            </div>
+            <table class="table table-condensed" id="hTable11">
+            </table>
+
+            <div class="panel-body">
+                <img src="/Content/themes/301.gif" id="historyGif12" style="position: relative; top:10%; left:45%;"/>
+                <p class="text-center"><strong>@(Model.c12.ToString("MMM-yyyy"))</strong></p>
+            </div>
+            <table class="table table-condensed" id="hTable12">
+            </table>
+
+        </div>
+
+
+    </div>
+
+    <script src="~/Scripts/jQuery/jquery-2.0.3.js"></script>
+    <script src="~/Scripts/Bootstrap/bootstrap.js"></script>
+    <script src="~/Scripts/m13admin.js"></script>
+</body>
+</html>
